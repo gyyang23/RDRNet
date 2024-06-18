@@ -9,9 +9,8 @@ This project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmen
 
 <p align="left">
   <img src="figures/0.png" alt="overview-of-our-method" width="500"/></br>
-  <span align="left">The trade-off between inference speed and accuracy for real-time semantic segmentation models on the Cityscapes test set.</span> 
 </p>
-
+The trade-off between inference speed and accuracy for real-time semantic segmentation models on the Cityscapes test set.
 
 # Experiment
 
