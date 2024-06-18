@@ -1,6 +1,6 @@
 # Reparameterizable Dual-Resolution Network for Real-time Semantic Segmentation ([arXiv](x))
 
-By Guoyu Yang, Yuan Wang, Daming Shi
+By Guoyu Yang, Yuan Wang, Daming Shi*
 
 This project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
 
@@ -8,7 +8,7 @@ This project is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmen
 # Highlight
 
 <p align="center">
-  <img src="figures/0.png" alt="overview-of-our-method" width="400"/></br>
+  <img src="figures/0.png" alt="overview-of-our-method" width="450"/></br>
   <span align="center">The trade-off between inference speed and accuracy for real-time semantic segmentation models on the Cityscapes test set.</span> 
 </p>
 
