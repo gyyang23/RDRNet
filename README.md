@@ -80,7 +80,7 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 ## Results on Cityscapes
 |       Method       |  FPS  | Params (M) | GFLOPs | ImageNet |                                            val                                             | test |
 |:------------------:|:-----:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|:----:|
-|     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10004; |                                            74.4                                            | 73.6 |
+|     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10003; |                                            74.4                                            | 73.6 |
 |     BiSeNetV2      | 74.4  |    3.4     |  98.4  | &#10008; |                                            73.6                                            | 72.2 |
 |   DDRNet-23-Slim   | 131.7 |    5.7     |  36.3  | &#10008; | [76.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 74.6 |
 |     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10006; | [78.0](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 77.6 |
