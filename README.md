@@ -48,10 +48,6 @@ RDRNet
 │   │   │   ├── ImageSets
 │   │   │   │   ├── Segmentation
 ├── rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py
-├── rdrnet-s_2xb6-120k_cityscapes-1024x1024.py
-├── rdrnet-m_2xb6-120k_cityscapes-1024x1024.py
-├── rdrnet-l_2xb6-120k_cityscapes-1024x1024.py
-├── rdrnet-s-simple_2xb6-24400_voc2012-512x512.py
 ├── train.py
 ├── test.py
 ```
