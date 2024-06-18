@@ -80,10 +80,10 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 ## Results on Cityscapes
 |       Method       |  FPS  | Params (M) | GFLOPs | ImageNet |                                            val                                             | test |
 |:------------------:|:-----:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|:----:|
-|     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10003; |                                            74.4                                            | 73.6 |
+|     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10010; |                                            74.4                                            | 73.6 |
 |     BiSeNetV2      | 74.4  |    3.4     |  98.4  | &#10008; |                                            73.6                                            | 72.2 |
 |   DDRNet-23-Slim   | 131.7 |    5.7     |  36.3  | &#10008; | [76.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 74.6 |
-|     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10006; | [78.0](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 77.6 |
+|     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10010; | [78.0](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 77.6 |
 |     PIDNet-S       | 102.6 |    7.7     |  47.3  | &#10006; | [76.4](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.2 |
 |     PIDNet-M       | 42.0  |    28.7    |  177.0 | &#10006; | [78.2](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
 |     PIDNet-L       | 31.8  |    37.3    |  275.0 | &#10006; | [78.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.4 |
