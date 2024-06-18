@@ -80,17 +80,17 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 ## Results on Cityscapes
 |       Method       |  FPS  | Params (M) | GFLOPs | ImageNet |                                            val                                             | test |
 |:------------------:|:-----:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|:----:|
-|     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10010; |                                            74.4                                            | 73.6 |
+|     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10004; |                                            74.4                                            | 73.6 |
 |     BiSeNetV2      | 74.4  |    3.4     |  98.4  | &#10008; |                                            73.6                                            | 72.2 |
 |   DDRNet-23-Slim   | 131.7 |    5.7     |  36.3  | &#10008; | [76.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 74.6 |
-|     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10010; | [78.0](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 77.6 |
-|     PIDNet-S       | 102.6 |    7.7     |  47.3  | &#10006; | [76.4](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.2 |
-|     PIDNet-M       | 42.0  |    28.7    |  177.0 | &#10006; | [78.2](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
-|     PIDNet-L       | 31.8  |    37.3    |  275.0 | &#10006; | [78.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.4 |
-|   RDRNet-S-Simple  | 134.6 |    7.2     |  41.0  | &#10006; | [76.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 75.4 |
-|     RDRNet-S       | 129.4 |    7.3     |  43.4  | &#10006; | [76.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.0 |
-|     RDRNet-M       | 52.5  |    26.0    |  162.0 | &#10006; | [78.9](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
-|     RDRNet-L       | 39.0  |    36.9    |  238.0 | &#10006; | [79.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.6 |
+|     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10008; | [78.0](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 77.6 |
+|     PIDNet-S       | 102.6 |    7.7     |  47.3  | &#10008; | [76.4](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.2 |
+|     PIDNet-M       | 42.0  |    28.7    |  177.0 | &#10008; | [78.2](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
+|     PIDNet-L       | 31.8  |    37.3    |  275.0 | &#10008; | [78.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.4 |
+|   RDRNet-S-Simple  | 134.6 |    7.2     |  41.0  | &#10008; | [76.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 75.4 |
+|     RDRNet-S       | 129.4 |    7.3     |  43.4  | &#10008; | [76.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.0 |
+|     RDRNet-M       | 52.5  |    26.0    |  162.0 | &#10008; | [78.9](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
+|     RDRNet-L       | 39.0  |    36.9    |  238.0 | &#10008; | [79.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.6 |
 
 During the evaluation on the validation set, the training set was utilized for training. During the evaluation on the test set, both the training and validation sets were employed for training. When performing inference on RTX 3090, the image resolution used was 1024 &#10005; 2048.
 
