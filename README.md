@@ -1,4 +1,4 @@
-# Reparameterizable Dual-Resolution Network for Real-time Semantic Segmentation ([arXiv](x))
+# Reparameterizable Dual-Resolution Network for Real-time Semantic Segmentation ([arXiv](https://arxiv.org/abs/2406.12496))
 
 By Guoyu Yang, Yuan Wang, Daming Shi*
 
@@ -40,6 +40,11 @@ RDRNet
 │   │   ├── gtFine
 │   │   │   ├── train
 │   │   │   ├── val
+│   ├── CamVid
+│   │   ├── train
+│   │   ├── train_labels
+│   │   ├── test
+│   │   ├── test_labels
 │   ├── VOCdevkit
 │   │   ├── VOC2012
 │   │   │   ├── JPEGImages
@@ -50,6 +55,11 @@ RDRNet
 ├── train.py
 ├── test.py
 ```
+
+Cityscapes could be downloaded from [here](https://www.cityscapes-dataset.com/downloads/). 
+Camvid could be downloaded from [here](https://drive.google.com/file/d/1H69xFbUr_FGUhIU1iWbYpIDyD1EIOJGl/view?usp=sharing). 
+Pascal VOC 2012 could be downloaded from [here](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar). 
+
 
 ## Training
 Single gpu for train:
@@ -80,13 +90,13 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 |:------------------:|:-----:|:----------:|:------:|:--------:|:------------------------------------------------------------------------------------------:|:----:|
 |     BiSeNetV1      | 65.9  |    13.3    |  118.0 | &#10003; |                                            74.4                                            | 73.6 |
 |     BiSeNetV2      | 74.4  |    3.4     |  98.4  | &#10007; |                                            73.6                                            | 72.2 |
-|   DDRNet-23-Slim   | 131.7 |    5.7     |  36.3  | &#10007; | [76.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 74.6 |
-|     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10007; | [78.0](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 77.6 |
-|     PIDNet-S       | 102.6 |    7.7     |  47.3  | &#10007; | [76.4](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.2 |
-|     PIDNet-M       | 42.0  |    28.7    |  177.0 | &#10007; | [78.2](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
-|     PIDNet-L       | 31.8  |    37.3    |  275.0 | &#10007; | [78.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.4 |
-|   RDRNet-S-Simple  | 134.6 |    7.2     |  41.0  | &#10007; | [76.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 75.4 |
-|     RDRNet-S       | 129.4 |    7.3     |  43.4  | &#10007; | [76.8](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 76.0 |
+|   DDRNet-23-Slim   | 131.7 |    5.7     |  36.3  | &#10007; | [76.3](https://drive.google.com/file/d/1x4vvs6RZdTosihTf6qTy2xbD5x5GThE9/view?usp=sharing) | 74.6 |
+|     DDRNet-23      | 54.6  |    20.3    |  143.0 | &#10007; | [78.0](https://drive.google.com/file/d/1cQt0kqzEgLXOg_arCO4Xn7O7aMOpFvbJ/view?usp=sharing) | 77.6 |
+|     PIDNet-S       | 102.6 |    7.7     |  47.3  | &#10007; | [76.4](https://drive.google.com/file/d/1SboDHBgL6gwFJuh3Jh_DLVeXA1L03DT9/view?usp=sharing) | 76.2 |
+|     PIDNet-M       | 42.0  |    28.7    |  177.0 | &#10007; | [78.2](https://drive.google.com/file/d/1GBigZvlMEBFG-yval93TEgn-GCHPDDH_/view?usp=sharing) | 78.3 |
+|     PIDNet-L       | 31.8  |    37.3    |  275.0 | &#10007; | [78.8](https://drive.google.com/file/d/11BX-QiA9sbNmJdF-3aH6Ux9yNp4jKwbX/view?usp=sharing) | 78.4 |
+|   RDRNet-S-Simple  | 134.6 |    7.2     |  41.0  | &#10007; | [76.7](https://drive.google.com/file/d/1vatVLTJukpJQR2PRY3TMKsFIdwVAzMQL/view?usp=sharing) | 75.4 |
+|     RDRNet-S       | 129.4 |    7.3     |  43.4  | &#10007; | [76.8](https://drive.google.com/file/d/14rr7XOCNlzCgpLMuVNLUTB39gIxkTBx3/view?usp=sharing) | 76.0 |
 |     RDRNet-M       | 52.5  |    26.0    |  162.0 | &#10007; | [78.9](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.3 |
 |     RDRNet-L       | 39.0  |    36.9    |  238.0 | &#10007; | [79.3](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX) | 78.6 |
 
@@ -97,10 +107,11 @@ During the evaluation on the validation set, the training set was utilized for t
 
 If you find RDRNet useful in your research, please consider citing:
 ```
-@article{yang2023afpn,
-  title={AFPN: Asymptotic Feature Pyramid Network for Object Detection},
-  author={Yang, Guoyu and Lei, Jie and Zhu, Zhikuan and Cheng, Siyu and Feng, Zunlei and Liang, Ronghua},
-  journal={arXiv preprint arXiv:2306.15988},
-  year={2023}
+@misc{yang2024reparameterizable,
+      title={Reparameterizable Dual-Resolution Network for Real-time Semantic Segmentation}, 
+      author={Guoyu Yang and Yuan Wang and Daming Shi},
+      year={2024},
+      eprint={2406.12496},
+      archivePrefix={arXiv}
 }
 ```
