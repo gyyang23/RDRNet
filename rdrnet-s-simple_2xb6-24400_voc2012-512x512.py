@@ -127,7 +127,7 @@ visualizer = dict(
     name='visualizer')
 log_processor = dict(by_epoch=False)
 log_level = 'INFO'
-load_from = './rdrnet-76.8.pth'
+load_from = './rdrnet-s-simple_mIoU-76.7.pth'
 resume = None
 tta_model = dict(type='SegTTAModel')
 max_iters = 24400
