@@ -257,6 +257,7 @@ class RDRNet(BaseModule):
             if isinstance(m, RB):
                 m.switch_to_deploy()
         self.spp.switch_to_deploy()
+        self.deploy = True
 
     def kaiming_init(self):
         for m in self.modules():
