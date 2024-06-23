@@ -22,7 +22,7 @@ class RDRNet(BaseModule):
         channels: (int): The base channels of RDRNet. Default: 32
         ppm_channels (int): The channels of PPM module. Default: 128
         num_blocks_per_stage (List[int]): The number of blocks with a
-            stride of 1 from stage 2 to stage 6. '[4, 3, 5, 4], [5, 4], [1, 1]]'
+            stride of 1 from stage 2 to stage 6. '[4, 3, [5, 4], [5, 4], [1, 1]]'
             corresponding RDRNet-S-Simple, RDRNet-S and RDRNet-M,
             '[6, 5 [7, 6], [7, 6], [2, 2]]' corresponding RDRNet-L.
         align_corners (bool): align_corners argument of F.interpolate.
