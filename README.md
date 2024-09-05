@@ -64,12 +64,12 @@ Pascal VOC 2012 could be downloaded from [here](http://host.robots.ox.ac.uk/pasc
 ## Training
 Single gpu for train:
 ```shell
-CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-simple_2xb6-120k_cityscapes-1024x1024.py --work-dir ./weight/seg
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py --work-dir ./weight/seg
 ```
 
 Multiple gpus for train:
 ```shell
-CUDA_VISIBLE_DEVICES=0,1 bash ./mmsegmentation/tools/dist_train.sh rdrnet-simple_2xb6-120k_cityscapes-1024x1024.py 2 --work-dir ./weight/seg
+CUDA_VISIBLE_DEVICES=0,1 bash ./mmsegmentation/tools/dist_train.sh rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py 2 --work-dir ./weight/seg
 ```
 
 Train in pycharm: If you want to train in pycharm, you can run it in train.py.
@@ -78,7 +78,7 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 
 ## Testing
 ```shell
-CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py rdrnet-simple_2xb6-120k_cityscapes-1024x1024.py ./weight/seg/rdrnet_weight.pth
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py ./weight/seg/rdrnet_weight.pth
 ```
 
 Test in pycharm: If you want to test in pycharm, you can run it in test.py.
