@@ -24,7 +24,7 @@ class RDRNet(BaseModule):
         num_blocks_per_stage (List[int]): The number of blocks with a
             stride of 1 from stage 2 to stage 6. '[4, 3, [5, 4], [5, 4], [1, 1]]'
             corresponding RDRNet-S-Simple, RDRNet-S and RDRNet-M,
-            '[6, 5 [7, 6], [7, 6], [2, 2]]' corresponding RDRNet-L.
+            '[6, 5, [7, 6], [7, 6], [2, 2]]' corresponding RDRNet-L.
         align_corners (bool): align_corners argument of F.interpolate.
             Default: False
         norm_cfg (dict): Config dict to build norm layer.
