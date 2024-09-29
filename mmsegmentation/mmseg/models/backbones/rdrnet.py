@@ -343,7 +343,7 @@ class Block1x1(BaseModule):
     def switch_to_deploy(self):
         kernel1, bias1 = self._fuse_bn_tensor(self.conv1)
         kernel2, bias2 = self._fuse_bn_tensor(self.conv2)
-        self.conv = self.conv2.conv
+        self.conv = self.conv1.conv
         self.conv.weight.data = torch.matmul(kernel2.transpose(1, 3), kernel1.squeeze(3).squeeze(2)).transpose(1, 3)
         self.conv.bias.data = bias2 + (bias1.view(1, -1, 1, 1) * kernel2).sum(3).sum(2).sum(1)
         self.__delattr__('conv1')
