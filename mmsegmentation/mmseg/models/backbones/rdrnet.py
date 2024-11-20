@@ -19,7 +19,7 @@ class RDRNet(BaseModule):
 
     Args:
         in_channels (int): Number of input image channels. Default: 3
-        channels: (int): The base channels of RDRNet. Default: 32
+        channels (int): The base channels of RDRNet. Default: 32
         ppm_channels (int): The channels of PPM module. Default: 128
         num_blocks_per_stage (List[int]): The number of blocks with a
             stride of 1 from stage 2 to stage 6. '[4, 3, [5, 4], [5, 4], [1, 1]]'
